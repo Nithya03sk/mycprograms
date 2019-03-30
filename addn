@@ -1,0 +1,15 @@
+#include<stdio.h>
+void addn(int n)
+{
+ int i,n,sum=0;
+ for(i=0,i<=n;i++)
+ sum=sum+i;
+ printf(Þsum is %dÞ,sum);
+}
+void main()
+{
+ int n;
+ printf(Þenter n \nÞ);
+ scanf(Þ%dÞ,&n);
+ addn(n);
+} 
