@@ -2,7 +2,7 @@
 #include<conio.h>
 int add(int n,int a[10])
 {
-	int sum,i;
+	int sum=0,i;
 	for(i=0;i<n;i++)
 	sum=sum+a[i];
 	return sum;
