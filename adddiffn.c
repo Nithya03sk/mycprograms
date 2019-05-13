@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<conio.h>
 int add(int n,int a[10])
 {
 	int sum=0,i;
