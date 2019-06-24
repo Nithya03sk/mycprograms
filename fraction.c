@@ -1,19 +1,17 @@
 #include<stdio.h>
-void input(int *n1,int *d1)
+void input(int *num,int *den)
 
-{
+{   
      printf("enter numerator\n");
-     scanf("%d",n1);
+     scanf("%d",num);
      printf("enter denominator\n");
-     scanf("%d",d1);
+     scanf("%d",den);
 }
 
 int lcm(int d1,int d2)
 
 {
-
-    int temp=1;
-
+    static int temp=1;
     if(temp%d1==0&&temp%d2==0)
 
         return temp;
@@ -61,11 +59,10 @@ void main()
     input(&n1,&d1);
     printf("enter fraction 2\n");
     input(&n2,&d2);
-    
     temp= lcm(d1,d2);
 
- num=add(n1,n2,d1,d2);
+    num=add(n1,n2,d1,d2);
 
- output(num,temp);
+    output(num,temp);
 
 }
