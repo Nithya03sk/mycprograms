@@ -1,6 +1,4 @@
 #include<stdio.h>
-#include<math.h>
-
 int input1(int n1)
 {
     printf("enter n1\n");
@@ -29,9 +27,12 @@ int input1(int n1)
 }
 int lcm(int d1,int d2)
 {
-    int l;
-    l=lcm(d1,d2);
-    return l;
+    int temp=1;
+    if(temp%d1==0&&temp%d2==0)
+        return temp;
+    temp++;
+    lcm(N1,N2);
+    return temp;
 }
 int add(int n1,int n2,int d1,int d2)
 {
@@ -53,7 +54,7 @@ void main()
  d1=input2(d1);
  n2=input3(n2);
  d2=input4(d2);
- l= lcm(d1,d2);
+ temp= lcm(d1,d2);
  num=add(n1,n2,d1,d2);
  output(num,l);
 }
