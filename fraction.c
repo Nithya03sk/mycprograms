@@ -31,7 +31,7 @@ int lcm(int d1,int d2)
     if(temp%d1==0&&temp%d2==0)
         return temp;
     temp++;
-    lcm(N1,N2);
+    lcm(d1,d2);
     return temp;
 }
 int add(int n1,int n2,int d1,int d2)
