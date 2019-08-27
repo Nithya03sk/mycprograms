@@ -1,0 +1,20 @@
+#include<stdio.h>
+struct fraction
+{
+    int numerator;
+    int denominator;
+    
+};
+struct fraction input()
+{
+    struct fraction f;
+    printf("enter fraction \n");
+    scanf("%d%d",&f.numerator,&f.denominator);
+    return f;
+}
+int main()
+{
+    struct  fruction f;
+    f=input();
+    
+}
