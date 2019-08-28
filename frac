@@ -1,0 +1,49 @@
+#include<stdio.h>
+#include<conio.h>
+struct fraction
+{
+	int n;
+	int d;
+
+};
+struct fraction input()
+{
+	struct fraction f;
+	printf("enter num");
+	scanf("%d",&f.n);
+	printf("enter den");
+	scanf("%d",&f.d);
+
+}
+int lcm(int f1.d,int f2.d)
+{
+	int temp=1;
+	if(temp%f1.d==0&&temp%f2.d==0)
+	return temp;
+	temp++;
+	lcm(f1.d,f2.d);
+}
+int output(int temp)
+{
+	int o;
+	o=(f1.n+f2.n)
+	printf("output is/n");
+	printf(o/l);
+	return o;
+}
+
+
+void main()
+{       int l
+	clrscr();
+	struct fraction f1=input();
+	struct fraction f2=input();
+
+	printf("enter fraction 1");
+	f1=input(f1.n,f1.d);
+	f2=input(f2.n,f2.d);
+	l=lcm(f1.d,f2.d);
+	output(o);
+	getch();
+
+}
