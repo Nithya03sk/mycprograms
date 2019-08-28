@@ -12,9 +12,22 @@ struct fraction input()
     scanf("%d%d",&f.numerator,&f.denominator);
     return f;
 }
+int lcm(f1.denominator,f2.denominator)
+{
+int temp=1;
+if(temp%f1.denominator==0&&temp%f2.denominator==0)
+
+
+
 int main()
 {
-    struct  fruction f;
-    f=input();
+    struct  fraction f1=input();
+    struct fraction f2=input();
+    printf("enter fraction 1");
+    f1=input(&f1.numerator,&f1.denominator);
+    printf("enter fraction 2");
+    f2=input(&f2.numerator,&f2.denominator);
+    
+    
     
 }
