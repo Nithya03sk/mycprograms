@@ -16,6 +16,11 @@ int lcm(f1.denominator,f2.denominator)
 {
 int temp=1;
 if(temp%f1.denominator==0&&temp%f2.denominator==0)
+return temp;
+temp++;
+lcm(f1.denominator,f2.denominator);
+}
+int output(
 
 
 
