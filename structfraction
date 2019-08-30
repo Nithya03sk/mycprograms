@@ -22,7 +22,9 @@ lcm(a,b);
 }
 Void add(int a,int b,int c,int d)
 {
-  
+  p=f1.numerator+f2.numerator;
+  return p;
+}
 int output(
 
 
