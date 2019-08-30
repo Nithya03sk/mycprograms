@@ -12,14 +12,17 @@ struct fraction input()
     scanf("%d%d",&f.numerator,&f.denominator);
     return f;
 }
-int lcm(f1.denominator,f2.denominator)
+int lcm(int a,int b)
 {
 int temp=1;
-if(temp%f1.denominator==0&&temp%f2.denominator==0)
+if(temp%a==0&&temp%b==0)
 return temp;
 temp++;
-lcm(f1.denominator,f2.denominator);
+lcm(a,b);
 }
+Void add(int a,int b,int c,int d)
+{
+  
 int output(
 
 
