@@ -20,7 +20,7 @@ return temp;
 temp++;
 lcm(a,b);
 }
-Void add(int a,int b,int c,int d)
+Void add(int a,int b)
 {
   p=f1.numerator+f2.numerator;
   return p;
@@ -43,9 +43,4 @@ int main()
     l=lcm(f1.denomimator,f2.denominator);
     a=add(f1.numerator,f2.numerator);
     output(l,a);
-}
-
-    
-    
-    
 }
