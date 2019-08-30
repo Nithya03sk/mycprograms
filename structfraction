@@ -25,7 +25,10 @@ Void add(int a,int b,int c,int d)
   p=f1.numerator+f2.numerator;
   return p;
 }
-int output(
+int output(int p,int l)
+{
+Printf("addition of fraction is",p/l);
+}
 
 
 
@@ -37,6 +40,11 @@ int main()
     f1=input(&f1.numerator,&f1.denominator);
     printf("enter fraction 2");
     f2=input(&f2.numerator,&f2.denominator);
+    l=lcm(f1.denomimator,f2.denominator);
+    a=add(f1.numerator,f2.numerator);
+    output(l,a);
+}
+
     
     
     
