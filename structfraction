@@ -14,33 +14,28 @@ struct fraction input()
 }
 int lcm(int a,int b)
 {
-int temp=1;
+int temp=1,i;
+for(i=0;i<=a*b;i++)
 if(temp%a==0&&temp%b==0)
 return temp;
 temp++;
-lcm(a,b);
+
 }
-Void add(int a,int b)
+Void add(int a,int b,int c)
 {
-  p=f1.numerator+f2.numerator;
+  p=(c*a)/b;
   return p;
 }
-int output(int p,int l)
+int output(int a,int b,int c)
 {
-Printf("addition of fraction is",p/l);
+printf("addition of fraction is",(a+b)/c);
 }
-
-
-
 int main()
 {
     struct  fraction f1=input();
     struct fraction f2=input();
-    printf("enter fraction 1");
-    f1=input(&f1.numerator,&f1.denominator);
-    printf("enter fraction 2");
-    f2=input(&f2.numerator,&f2.denominator);
     l=lcm(f1.denomimator,f2.denominator);
-    a=add(f1.numerator,f2.numerator);
-    output(l,a);
+    a=add(f1.numerator,f1.denominator,l);
+    b=add(f2.numerator,f2.denominator,l);
+    output(a,b,l);
 }
