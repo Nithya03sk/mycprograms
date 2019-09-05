@@ -15,27 +15,28 @@ struct fraction input()
 int lcm(int a,int b)
 {
 int i,m;
-m=(a>b)?:a:b;
-int i;
-for(i=1;i++)
+m=(a>b)?a:b;
+for(i=1;i=1;i++)
 if(m%a==0&&m%b==0)
 return m;
 ++m;
 }
-Void add(int a,int b,int c)
+int add(int a,int b,int c)
 {
+    int p;
   p=(c*a)/b;
   return p;
 }
 int output(int a,int b,int c)
 {
-printf("addition of fraction is",(a+b)/c);
+printf("addition of fraction is %d/%d",(a+b),c);
 }
-int main()
+void main()
 {
+    int m,a,b;
     struct  fraction f1=input();
     struct fraction f2=input();
-    m=lcm(f1.denomimator,f2.denominator);
+    m=lcm(f1.denominator,f2.denominator);
     a=add(f1.numerator,f1.denominator,m);
     b=add(f2.numerator,f2.denominator,m);
     output(a,b,m);
