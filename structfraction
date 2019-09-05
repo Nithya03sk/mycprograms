@@ -14,12 +14,12 @@ struct fraction input()
 }
 int lcm(int a,int b)
 {
-int temp=1,i;
-for(i=0;i<=a*b;i++)
-if(temp%a==0&&temp%b==0)
-return temp;
-temp++;
-
+m=(a>b)?:a:b;
+int i;
+for(i=1;i++)
+if(m%a==0&&m%b==0)
+return m;
+++m;
 }
 Void add(int a,int b,int c)
 {
@@ -34,7 +34,7 @@ int main()
 {
     struct  fraction f1=input();
     struct fraction f2=input();
-    l=lcm(f1.denomimator,f2.denominator);
+    m=lcm(f1.denomimator,f2.denominator);
     a=add(f1.numerator,f1.denominator,l);
     b=add(f2.numerator,f2.denominator,l);
     output(a,b,l);
