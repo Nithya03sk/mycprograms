@@ -14,6 +14,7 @@ struct fraction input()
 }
 int lcm(int a,int b)
 {
+int i,m;
 m=(a>b)?:a:b;
 int i;
 for(i=1;i++)
@@ -35,7 +36,7 @@ int main()
     struct  fraction f1=input();
     struct fraction f2=input();
     m=lcm(f1.denomimator,f2.denominator);
-    a=add(f1.numerator,f1.denominator,l);
-    b=add(f2.numerator,f2.denominator,l);
-    output(a,b,l);
+    a=add(f1.numerator,f1.denominator,m);
+    b=add(f2.numerator,f2.denominator,m);
+    output(a,b,m);
 }
