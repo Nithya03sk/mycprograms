@@ -1,8 +1,8 @@
 #include<stdio.h>
 struct fraction
 {
-    int numerator;
-    int denominator;
+    int num[i];
+    int den[i];
     
 };
 struct fraction input()
