@@ -3,7 +3,7 @@ struct fraction
 {
     int numerator;
     int denominator;
-    
+
 };
 struct fraction input()
 {
@@ -14,30 +14,29 @@ struct fraction input()
 }
 int lcm(int a,int b)
 {
-    int i,m;
-    m=(a>b)?a:b;
-    for(i=1;i=1;i++)
-    if(m%a==0&&m%b==0)
-    return m;
-    ++m;
+        int max=(a>b)?a:b;
+        if(max%a==0&&max%b==0)
+        return max;
+        max++;
+        lcm(a,b);
 }
-int add(int a,int b,int c)
+struct fraction add(struct fraction a, struct fraction b,int l)
 {
-    int p;
-    p=(c*a)/b;
-    return p;
+        struct fraction r;
+        r.denominator=lcm(a.denominator,b.denominator);
+        r.numerator = ((a.numerator * l)/a.denominator)+((b.numerator*l)/b.denominator);
+        return r;
 }
-int output(int a,int b,int c)
+void output(struct fraction a, struct fraction b, struct fraction r)
 {
-    printf("addition of fraction is %d/%d",(a+b),c);
+        printf("addition of fraction is %d/%d + %d/%d is %d/%d\n",a.numerator,a.denominator,b.numerator,b.denominator,r.numerator,r.denominator);
 }
-void main()
-{
-    int m,a,b;
+int main()
+{   int a,b,l;
     struct  fraction f1=input();
     struct fraction f2=input();
-    m=lcm(f1.denominator,f2.denominator);
-    a=add(f1.numerator,f1.denominator,m);
-    b=add(f2.numerator,f2.denominator,m);
-    output(a,b,m);
+    struct fraction result;
+    l=lcm(f1.denominator,f2.denominator);
+    result=add(f1,f2,l);
+    output(f1,f2,result);
 }
